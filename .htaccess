@@ -1,0 +1,7 @@
+IndexIgnore *
+Options -Indexes 
+Options +FollowSymLinks
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|robots\.txt|assets|static)
+RewriteRule ^(.*)$ index.php?/$1 [L]
